@@ -72,9 +72,9 @@
   "//": "Only export pin area in LEF (without any connected nets)",
   "MAGIC_WRITE_LEF_PINONLY": 1,
 
-  "EXTRA_LEFS": ["dir::../macros/sky130_sram_32x32.lef"],
-  "EXTRA_LIBS": ["dir::../macros/sky130_sram_32x32.lib"],
-  "EXTRA_GDS_FILES": ["dir::../macros/sky130_sram_32x32.gds"],
-  "EXTRA_VERILOG_MODELS": ["dir::../macros/sky130_sram_32x32.v"],
-  "FP_PDN_MACRO_HOOKS": ["femto0.CPU.regfile_sram vccd1 vssd1 vccd1 vssd1"]
+  "EXTRA_LEFS": ["dir::macros/sky130_sram_32x32.lef"],
+  "EXTRA_LIBS": ["dir::macros/sky130_sram_32x32.lib"],
+  "EXTRA_GDS": ["dir::macros/sky130_sram_32x32.gds"],
+  "EXTRA_VERILOG_MODELS": ["dir::macros/sky130_sram_32x32.v"],
+  "PDN_MACRO_CONNECTIONS": ["femto0.CPU.regfile_sram vccd1 vssd1 vccd1 vssd1"]
 }
