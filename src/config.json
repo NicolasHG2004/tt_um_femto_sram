@@ -20,7 +20,7 @@
   "FP_IO_VLENGTH": 2,
   "FP_PDN_VPITCH": 38.87,
   "RUN_CTS": 1,
-  "FP_PDN_MULTILAYER": 0,
+  "FP_PDN_MULTILAYER": 1,
   "MAGIC_DEF_LABELS": 0,
   "MAGIC_WRITE_LEF_PINONLY": 1,
   "EXTRA_LEFS": [
@@ -36,7 +36,9 @@
     "dir::macros/sky130_sram_32x32.v"
   ],
   "PDN_MACRO_CONNECTIONS": [
-    "femto0.CPU.regfile_sram VPWR VGND vccd1 vssd1"
+    "femto0.CPU.regfile_sram vccd1 vssd1 vccd1 vssd1"
   ],
+  "VDD_NETS": ["vccd1"],
+  "GND_NETS": ["vssd1"],
   "MACRO_PLACEMENT_CFG": "dir::macro_placement.cfg"
 }
