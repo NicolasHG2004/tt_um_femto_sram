@@ -1,12 +1,13 @@
+# Tiny Tapeout project information
 project:
-  title:       "FemtoRV32 Quark OpenRAM"
-  author:      "Nicolas"
-  discord:     ""
-  description: "RISC-V FemtoRV32 Quark SoC with OpenRAM 32x32 register file"
-  language:    "Verilog"
-  clock_hz:    27000000
-  tiles:       "4x2"
-  top_module:  "tt_um_femto"
+  title:        "FemtoRV32 Quark OpenRAM"
+  author:       "Nicolas"
+  discord:      ""
+  description:  "RISC-V FemtoRV32 Quark SoC with OpenRAM 32x32 register file"
+  language:     "Verilog"
+  clock_hz:     27000000
+  tiles:        "4x2"
+  top_module:   "tt_um_femto"
   source_files:
     - "femto.v"
     - "femtorv32_quark_un_irq.v"
@@ -17,7 +18,6 @@ project:
     - "bram.v"
     - "MappedSPIFlash.v"
     - "MappedSPIRAM.v"
-    - "../macros/sky130_sram_32x32.v"
 
 pinout:
   ui[0]: "spi_miso (SPI Flash)"
@@ -47,6 +47,5 @@ pinout:
   uio[6]: ""
   uio[7]: ""
 
-yaml_version: 6
-
+# Do not change!
 yaml_version: 6
