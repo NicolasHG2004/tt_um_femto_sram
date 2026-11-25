@@ -371,10 +371,6 @@ module FemtoRV32(
    assign rf_din0 = writeBackData;
 
    sky130_sram_32x32 regfile_sram (
-`ifdef USE_POWER_PINS
-      .vccd1      (vccd1),
-      .vssd1      (vssd1),
-`endif
       .clk0       (clk),              
       .csb0       (rf_csb0),
       .web0       (rf_web0),
